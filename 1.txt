@@ -1,0 +1,3 @@
+LambdaQueryWrapper<PaymentType> lambdaQueryWrapper = new LambdaQueryWrapper<>();
+lambdaQueryWrapper.eq(PaymentType::getIsDeleted,0);
+List<PaymentType> list = paymentTypeService.list(lambdaQueryWrapper);
