@@ -28,7 +28,7 @@ SpecCaptcha specCaptcha = new SpecCaptcha(130, 48, 4);
         return new CaptchaVo(image, key);
 ```
 
-### 2. Sa-Token进行角色验证
+### 2. Sa-Token进行登录认证与角色验证
 ```java
 public class SaTokenConfiguration extends WebMvcConfigurationSupport {
     protected void addInterceptors(InterceptorRegistry registry) {
